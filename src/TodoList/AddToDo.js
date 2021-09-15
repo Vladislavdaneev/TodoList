@@ -10,8 +10,8 @@ function AddToDo({onCreate}){
     }
     return(
         <form onSubmit={submitHandler}>
-            <input value={value} onChange={event=>setValue(event.target.value)}></input>
-            <button type='submit' style={{cursor:'Pointer'}}>Добавить в список</button>
+            <input style={{borderColor:'green'}} value={value} onChange={event=>setValue(event.target.value)}></input>
+            <button type='submit' style={{cursor:'Pointer', borderColor:'green'}}>Добавить в список</button>
         </form>
     )
 }

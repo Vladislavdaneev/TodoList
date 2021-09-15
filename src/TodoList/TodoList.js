@@ -1,5 +1,5 @@
 import React from 'react'
-import TodoItem from './ListItem'
+import TodoItem from './TodoItem'
 function TodoList(props){
 const styles ={
     ul:{
@@ -11,12 +11,12 @@ const styles ={
 
     return(
         <ul stylele={styles} >
-            {props.todo.map((todo,index)=>{
+            {props.todos.map((todos,index)=>{
                 return <TodoItem
-                    todo={todo}
-                    key={todo.id}
+                    todos={todos}
+                    key={todos.id}
                     index={index}
-                
+                    
                     />
                 }
             )}
